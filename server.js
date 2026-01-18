@@ -16,9 +16,9 @@ app.use(cors({
 
 // RULE VIOLATION: exposed-secrets
 // Triggers: Regex matches for AWS, Google, and Generic keys
-const AWS_ACCESS_KEY = "AKIAIOSFODNN7EXAMPLE"; // Matches AKIA + 16 chars
-const GOOGLE_API_KEY = "AIzaSyD-1234567890abcdefghijklmnopqr_"; // Matches AIza + 35 chars
-const STRIPE_API_KEY = "api_key = 'sk_live_51H0js1234567890abcdefghijklmnopq'"; // Matches generic pattern
+const AWS_ACCESS_KEY = "example"; // Matches AKIA + 16 chars
+const GOOGLE_API_KEY = "AIzaSyD-example"; // Matches AIza + 35 chars
+const STRIPE_API_KEY = "api_key = 'exampe'"; // Matches generic pattern
 
 // Mock DB connection
 const db = mysql.createConnection({ host: 'localhost', user: 'root', password: '' });
